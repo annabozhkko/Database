@@ -1,0 +1,16 @@
+CREATE TABLE Tariffs(
+    ID SERIAL PRIMARY KEY,
+    Type INTEGER NOT NULL REFERENCES typescredits,
+    Rate INTEGER NOT NULL,
+    Sum INTEGER NOT NULL
+);
+
+INSERT INTO Tariffs(Type, Rate, Sum)  VALUES
+(1, 10, 1000000),
+(1, 12, 2000000),
+(1, 20, 5500000),
+(2, 5, 500000),
+(2, 8, 150000),
+(2, 12, 700000),
+(3, 18, 2000000),
+(3, 20, 4000000)

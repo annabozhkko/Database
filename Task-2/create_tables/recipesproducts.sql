@@ -1,0 +1,37 @@
+CREATE TABLE RecipesProducts(
+    IDRecipe INTEGER NOT NULL REFERENCES Recipes,
+    IDProduct INTEGER NOT NULL REFERENCES Products,
+    NumberProducts FLOAT NOT NULL
+);
+
+INSERT INTO RecipesProducts(IDRecipe, IDProduct, NumberProducts) VALUES
+(1, 15, 0.4),
+(1, 13, 30),
+(2, 3, 0.5),
+(2, 4, 0.1),
+(2, 5, 2),
+(2, 6, 0.1),
+(3, 2, 0.7),
+(3, 12, 0.4),
+(3, 14, 0.2),
+(4, 2, 0.3),
+(4, 1, 0.15),
+(4, 6, 0.1),
+(4, 8, 0.1),
+(4, 7, 0.3),
+(5, 5, 3),
+(5, 16, 0.2),
+(5, 17, 0.15),
+(5, 12, 0.2),
+(5, 14, 0.1),
+(6, 9, 0.4),
+(6, 10, 0.2),
+(6, 11, 0.3),
+(6, 5, 3),
+(7, 9, 0.3),
+(7, 10, 0.15),
+(7, 11, 0.25),
+(7, 5, 4),
+(7, 18, 0.35),
+(4, 5, 2),
+(3, 13, 20);
